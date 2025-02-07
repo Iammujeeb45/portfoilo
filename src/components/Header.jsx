@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiFillInstagram, AiOutlineMenu } from "react-icons/ai";
 
 const Header = ({ setMenuOpen, menuOpen }) => {
   return (
@@ -25,7 +25,7 @@ export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
 
 const NavContent = ({ setMenuOpen }) => (
   <>
-    <h2>Abhishek.</h2>
+    <h2>Mujeeb</h2>
     <div>
       <a onClick={() => setMenuOpen(false)} href="#home">
         Home
@@ -33,21 +33,23 @@ const NavContent = ({ setMenuOpen }) => (
       <a onClick={() => setMenuOpen(false)} href="#work">
         Work
       </a>
-      <a onClick={() => setMenuOpen(false)} href="#timeline">
+      {/* <a onClick={() => setMenuOpen(false)} href="#timeline">
         Experience
       </a>
       <a onClick={() => setMenuOpen(false)} href="#services">
         Services
-      </a>
-      <a onClick={() => setMenuOpen(false)} href="#testimonial">
+      </a> */}
+      {/* <a onClick={() => setMenuOpen(false)} href="#testimonial">
         Testimonial
-      </a>
+      </a> */}
       <a onClick={() => setMenuOpen(false)} href="#contact">
         Contact
       </a>
     </div>
-    <a href="mailto:official.6packprogrammer@gmail.com">
-      <button>Email</button>
+    <a href="https://instagram.com/beyond_imaginations_45" >
+      <button>
+        INSTAGRAM <AiFillInstagram />
+      </button>
     </a>
   </>
 );

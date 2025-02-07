@@ -4,7 +4,7 @@ import data from "../assets/data.json";
 const Timeline = () => {
   return (
     <div id="timeline">
-      <div className="timelineBox">
+      <div className="timelineBox ">
         {data.projects.map((item, index) => (
           <TimelineItem
             heading={item.title}

@@ -1,25 +1,25 @@
 import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import me from "../assets/logo.png";
+import { BsChevronDown } from "react-icons/bs";
+import image from "../assets/mujeeb.png";
 
 const Home = ({ ratio }) => {
-  const clientCount = useRef(null);
-  const projectCount = useRef(null);
+  // const clientCount = useRef(null);
+  // const projectCount = useRef(null);
 
-  const animationClientsCount = () => {
-    animate(0, 100, {
-      duration: 1,
-      onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
-    });
-  };
-  const animationProjectsCount = () => {
-    animate(0, 500, {
-      duration: 1,
-      onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
-    });
-  };
+  // const animationClientsCount = () => {
+  //   animate(0, 100, {
+  //     duration: 1,
+  //     onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
+  //   });
+  // };
+  // const animationProjectsCount = () => {
+  //   animate(0, 500, {
+  //     duration: 1,
+  //     onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
+  //   });
+  // };
 
   const animations = {
     h1: {
@@ -48,12 +48,12 @@ const Home = ({ ratio }) => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
-            Hi, I Am <br /> Abhishek Singh
+            Hi, I Am <br /> Mujeeb Shaik
           </motion.h1>
 
           <Typewriter
             options={{
-              strings: ["A Developer", "A Designer", "A Creator"],
+              strings: ["A Developer", "A Designer"],
               autoStart: true,
               loop: true,
               cursor: "",
@@ -61,14 +61,14 @@ const Home = ({ ratio }) => {
             }}
           />
 
-          <div>
+          {/* <div>
             <a href="mailto:official.6packprogrammer@gmail.com">Hire Me</a>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
-          </div>
+          </div> */}
 
-          <article>
+          {/* <article>
             <p>
               +
               {ratio < 2 && (
@@ -79,8 +79,8 @@ const Home = ({ ratio }) => {
               )}
             </p>
             <span>Clients Worldwide</span>
-          </article>
-
+          </article> */}
+          {/* 
           <aside>
             <article>
               <p>
@@ -97,15 +97,15 @@ const Home = ({ ratio }) => {
               <span>Projects Done</span>
             </article>
 
-            <article data-special>
-              <p>Contact</p>
-              <span>official.6packprogrammer@gmail.com</span>
-            </article>
-          </aside>
+            // <article data-special>
+            //   <p>Contact</p>
+            //   <span>official.6packprogrammer@gmail.com</span>
+            // </article>
+          </aside> */}
         </div>
       </section>
       <section>
-        <img src={me} alt="Abhishek" />
+        <img src={image} alt="Abhishek" />
       </section>
       <BsChevronDown />
     </div>

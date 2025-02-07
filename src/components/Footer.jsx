@@ -1,8 +1,10 @@
 import React from "react";
+import image from "../assets/me.jpeg";
+
 import {
   AiFillGithub,
   AiFillInstagram,
-  AiFillYoutube,
+  // AiFillYoutube,
   AiOutlineArrowUp,
 } from "react-icons/ai";
 
@@ -10,26 +12,26 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <img
-          src={"https://avatars.githubusercontent.com/u/25058652"}
-          alt="Founder"
-        />
+        <img src={image} alt="Founder" />
 
-        <h2>Abhishek Singh</h2>
-        <p>Motivation is temporary, but discipline last forever.</p>
+        <h2>Mujeeb Shaik</h2>
+        <p>NO bugs..Only Hugs</p>
       </div>
 
       <aside>
         <h2>Social Media</h2>
 
         <article>
-          <a href="https://youtube.com/6packprogrammer" target={"blank"}>
+          {/* <a href="https://youtube.com/6packprogrammer" target={"blank"}>
             <AiFillYoutube />
-          </a>
-          <a href="https://instagram.com/meabhisingh" target={"blank"}>
+          </a> */}
+          <a
+            href="https://instagram.com/beyond_imaginations_45"
+            target={"blank"}
+          >
             <AiFillInstagram />
           </a>
-          <a href="https://github.com/meabhisingh" target={"blank"}>
+          <a href="https://github.com/Iammujeeb45" target={"blank"}>
             <AiFillGithub />
           </a>
         </article>
