@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsChevronDown } from "react-icons/bs";
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
 import image from "../assets/mujeeb.png";
 
 const Home = ({ ratio }) => {
   // const clientCount = useRef(null);
-  // const projectCount = useRef(null);
+  const projectCount = useRef(null);
 
   // const animationClientsCount = () => {
   //   animate(0, 100, {
@@ -14,12 +14,12 @@ const Home = ({ ratio }) => {
   //     onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
   //   });
   // };
-  // const animationProjectsCount = () => {
-  //   animate(0, 500, {
-  //     duration: 1,
-  //     onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
-  //   });
-  // };
+  const animationProjectsCount = () => {
+    animate(0, 500, {
+      duration: 1,
+      onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
+    });
+  };
 
   const animations = {
     h1: {
@@ -61,12 +61,11 @@ const Home = ({ ratio }) => {
             }}
           />
 
-          {/* <div>
-            <a href="mailto:official.6packprogrammer@gmail.com">Hire Me</a>
+          <div>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
-          </div> */}
+          </div>
 
           {/* <article>
             <p>
@@ -80,28 +79,15 @@ const Home = ({ ratio }) => {
             </p>
             <span>Clients Worldwide</span>
           </article> */}
-          {/* 
-          <aside>
-            <article>
-              <p>
-                +
-                {ratio < 2 && (
-                  <motion.span
-                    ref={projectCount}
-                    whileInView={animationProjectsCount}
-                  >
-                    500
-                  </motion.span>
-                )}
-              </p>
-              <span>Projects Done</span>
-            </article>
 
-            // <article data-special>
-            //   <p>Contact</p>
-            //   <span>official.6packprogrammer@gmail.com</span>
-            // </article>
-          </aside> */}
+          <aside>
+            <article data-special>
+              <p>Contact</p>
+              <a href="mailto:2001mujeebahmed@gmail.com" className="email">
+                2001mujeebahmed@gmail.com
+              </a>
+            </article>
+          </aside>
         </div>
       </section>
       <section>
