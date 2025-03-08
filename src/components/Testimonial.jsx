@@ -98,7 +98,7 @@ const technologies = [
 
 const Testimonial = () => {
   return (
-    <div id="testimonial">
+    <div id="technologies">
       <h2>Technologies</h2>
 
       <section>

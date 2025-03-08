@@ -39,12 +39,15 @@ const NavContent = ({ setMenuOpen }) => (
       <a onClick={() => setMenuOpen(false)} href="#services">
         Services
       </a> */}
-      <a onClick={() => setMenuOpen(false)} href="#testimonial">
+      {/* <a onClick={() => setMenuOpen(false)} href="#testimonial">
+      Technologies
+      </a> */}
+      <a onClick={() => setMenuOpen(false)} href="#technologies">
       Technologies
       </a>
-      <a onClick={() => setMenuOpen(false)} href="#contact">
+      {/* <a onClick={() => setMenuOpen(false)} href="#contact">
         Contact
-      </a>
+      </a> */}
     </div>
     <a href="https://instagram.com/beyond_imaginations_45" >
       <button>

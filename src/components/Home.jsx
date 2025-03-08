@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import image from "../assets/mujeeb.png";
+import image from "../assets/sss.png";
 
 const Home = ({ ratio }) => {
   // const clientCount = useRef(null);
@@ -61,6 +61,15 @@ const Home = ({ ratio }) => {
             }}
           />
 
+          <aside>
+            <article data-special>
+              <p>Contact</p>
+              <a href="mailto:2001mujeebahmed@gmail.com" className="email">
+                2001mujeebahmed@gmail.com
+              </a>
+            </article>
+          </aside>
+
           <div>
             <a href="#work">
               Projects <BsArrowUpRight />
@@ -79,21 +88,11 @@ const Home = ({ ratio }) => {
             </p>
             <span>Clients Worldwide</span>
           </article> */}
-
-          <aside>
-            <article data-special>
-              <p>Contact</p>
-              <a href="mailto:2001mujeebahmed@gmail.com" className="email">
-                2001mujeebahmed@gmail.com
-              </a>
-            </article>
-          </aside>
         </div>
       </section>
       <section>
         <img src={image} alt="Abhishek" />
       </section>
-      <BsChevronDown />
     </div>
   );
 };

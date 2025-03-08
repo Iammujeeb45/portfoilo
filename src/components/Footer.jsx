@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/me.jpeg";
+import image from "../assets/Shaik.jpeg";
 
 import {
   AiFillGithub,
