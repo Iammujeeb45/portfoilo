@@ -92,6 +92,7 @@ import React from "react";
 const technologies = [
   { name: "HTML", imgSrc: "https://static.vecteezy.com/system/resources/previews/001/416/705/non_2x/html5-emblem-orange-shield-and-white-text-vector.jpg" },
   { name: "CSS", imgSrc: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+  { name: "TailwindCSS", imgSrc: "https://pbs.twimg.com/profile_images/1730334391501488129/G0R0sjHH_400x400.jpg" },
   { name: "JavaScript", imgSrc: "https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" },
   { name: "React JS", imgSrc: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" }
 ];

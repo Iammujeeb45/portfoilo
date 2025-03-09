@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import image from "../assets/sss.png";
+import { BsArrowUpRight } from "react-icons/bs";
+import image from "../assets/King.png";
 
 const Home = ({ ratio }) => {
   // const clientCount = useRef(null);
@@ -14,12 +14,6 @@ const Home = ({ ratio }) => {
   //     onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
   //   });
   // };
-  const animationProjectsCount = () => {
-    animate(0, 500, {
-      duration: 1,
-      onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
-    });
-  };
 
   const animations = {
     h1: {
