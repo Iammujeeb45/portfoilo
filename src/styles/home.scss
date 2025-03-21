@@ -37,7 +37,8 @@
               padding: 1rem 2.5rem;
               transition: all 0.3s;
               &:hover {
-                background-color: $color3_1;
+                background-color: black;
+                color: white;
               }
             }
             &:last-of-type {
@@ -92,7 +93,6 @@
               transition: transform 0.3s ease-in-out;
             }
 
-            
             animation: fadeIn 1.5s ease-in-out;
           }
         }
